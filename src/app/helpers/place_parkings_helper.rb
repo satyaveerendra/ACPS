@@ -1,0 +1,2 @@
+module PlaceParkingsHelper
+end

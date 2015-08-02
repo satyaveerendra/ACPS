@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Slot number:</strong>
+  <%= @place_parking.slot_number %>
+</p>
+
+<p>
+  <strong>Registration number:</strong>
+  <%= @place_parking.registration_number %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @place_parking.color %>
+</p>
+
+<%= link_to 'Edit', edit_place_parking_path(@place_parking) %> |
+<%= link_to 'Back', place_parkings_path %>

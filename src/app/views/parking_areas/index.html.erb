@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Parking Areas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Capacity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @parking_areas.each do |parking_area| %>
+      <tr>
+        <td><%= parking_area.capacity %></td>
+        <td><%= link_to 'Show', parking_area %></td>
+        <td><%= link_to 'Edit', edit_parking_area_path(parking_area) %></td>
+        <td><%= link_to 'Destroy', parking_area, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Parking area', new_parking_area_path %>

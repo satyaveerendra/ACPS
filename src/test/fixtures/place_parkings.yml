@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  slot_number: 1
+  registration_number: MyString
+  color: MyString
+
+two:
+  slot_number: 1
+  registration_number: MyString
+  color: MyString

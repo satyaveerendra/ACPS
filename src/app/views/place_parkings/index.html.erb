@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Place Parkings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Slot number</th>
+      <th>Registration number</th>
+      <th>Color</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @place_parkings.each do |place_parking| %>
+      <tr>
+        <td><%= place_parking.slot_number %></td>
+        <td><%= place_parking.registration_number %></td>
+        <td><%= place_parking.color %></td>
+        <td><%= link_to 'Show', place_parking %></td>
+        <td><%= link_to 'Edit', edit_place_parking_path(place_parking) %></td>
+        <td><%= link_to 'Destroy', place_parking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Place parking', new_place_parking_path %>
